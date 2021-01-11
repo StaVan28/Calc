@@ -8,7 +8,7 @@ calculator::calculator(void)
     FILE* calc_file = fopen("calc_example.txt", "rb");  //C
 	if(calc_file == nullptr) {
         std::cout << "Please, create a \"calc_example.txt\"\n";
-        exit();
+        exit(); 
     }
 
     num_symb = number_of_symbols(calc_file);
